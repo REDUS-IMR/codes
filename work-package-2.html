@@ -4,12 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Work Package 2 | REDUS logo REDUS Software Collection</title>
-  <meta name="description" content="<br />
-REDUS Software Collection</p>" />
+  <title>2 Work Package 2 | REDUS Software Collection</title>
+  <meta name="description" content="2 Work Package 2 | REDUS Software Collection" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Work Package 2 | REDUS logo REDUS Software Collection" />
+  <meta property="og:title" content="2 Work Package 2 | REDUS Software Collection" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +16,7 @@ REDUS Software Collection</p>" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Work Package 2 | REDUS logo REDUS Software Collection" />
+  <meta name="twitter:title" content="2 Work Package 2 | REDUS Software Collection" />
   
   
   
@@ -50,9 +49,29 @@ REDUS Software Collection</p>" />
 
 
 
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    $("#header").prepend("<img src=\"images/reduslogo.jpg\" alt=\"REDUS logo\">");
+
+    $('body').prepend("<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>");
+    // onClick function for all plots (img's)
+    $('img.screenshot').mouseover(function() {
+      $('.zoomImg').attr('src', $(this).attr('src'));
+      $('.zoomDiv').css({opacity: '1', width: '60%'});
+    });
+    // onClick function for zoomImg
+    $('.zoomImg').mouseout(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'});
+    }).click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'});
+    });
+  });
+</script>
 
 
 
+<link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
 
 <body>
@@ -117,8 +136,7 @@ REDUS Software Collection</p>" />
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><p><img src="images/reduslogo.jpg" alt="REDUS logo" /><br />
-REDUS Software Collection</p></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">REDUS Software Collection</a>
           </h1>
         </div>
 
@@ -179,9 +197,9 @@ Another tool enables users to check if their own survey time series’ StoX proj
 <p><em>Ibrahim Umar (IMR)</em></p>
 <p><em>2020-12-31</em></p>
 <p>This is a collection of some scripts that can be useful for processing the IMR biotic data version 3 using R program. One script is for downloading a whole cruise and flattening the tables into one big table, while another one is for adding the missing scientific names for all the samples</p>
+<p><strong>Jupyter notebook</strong>: (<a href="https://nbviewer.jupyter.org/urls/redus-imr.github.io/codes/assets/ibrahim-various_scripts.ipynb">show</a>) (<a href="assets/ibrahim-various_scripts.ipynb">download</a>)</p>
 <p><strong>Download</strong> (<em>software</em>): <a href="./assets/ibrahim-various_scripts.R">ibrahim-various_scripts.R</a></p>
 <p><strong>Keywords</strong>: <em>scripts, biotic, REDUS, IMR</em></p>
-<p><strong>Showcase</strong>: (<a href="assets/ibrahim-various_scripts.ipynb">notebook</a>)</p>
 </div>
 <div id="trawl-performance-report" class="section level2" number="2.7">
 <h2><span class="header-section-number">2.7</span> Trawl Performance Report</h2>
@@ -192,11 +210,11 @@ Another tool enables users to check if their own survey time series’ StoX proj
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/Mel-Underwood/Trawl-Preformance-Report" class="uri">https://github.com/Mel-Underwood/Trawl-Preformance-Report</a></p>
 <p><strong>Keywords</strong>: <em>trawl, scanmar, toktlogger, sensors, report, performance, REDUS, IMR</em></p>
 <p><strong>Screenshots</strong>:</p>
-<p><img src="images/melanie-sensor_parsers1.jpg" style="width:3in" alt="Screenshot1" />
-<img src="images/melanie-sensor_parsers2.jpg" style="width:3in" alt="Screenshot2" />
-<img src="images/melanie-sensor_parsers3.jpg" style="width:3in" alt="Screenshot3" />
-<img src="images/melanie-sensor_parsers4.jpg" style="width:3in" alt="Screenshot4" />
-<img src="images/melanie-sensor_parsers5.jpg" style="width:3in" alt="Screenshot5" /></p>
+<p><img src="images/melanie-sensor_parsers1.jpg" class="screenshot" style="width:45.0%" alt="Screenshot1" />
+<img src="images/melanie-sensor_parsers2.jpg" class="screenshot" style="width:45.0%" alt="Screenshot2" />
+<img src="images/melanie-sensor_parsers3.jpg" class="screenshot" style="width:45.0%" alt="Screenshot3" />
+<img src="images/melanie-sensor_parsers4.jpg" class="screenshot" style="width:45.0%" alt="Screenshot4" />
+<img src="images/melanie-sensor_parsers5.jpg" class="screenshot" style="width:45.0%" alt="Screenshot5" /></p>
 </div>
 <div id="ibtsnorthsea-sampling-strategies-for-age-determination-of-cod-gadhus-morhua" class="section level2" number="2.8">
 <h2><span class="header-section-number">2.8</span> IBTSNorthSea: sampling strategies for age determination of cod (Gadhus morhua)</h2>
@@ -243,10 +261,7 @@ gitbook.start({
 "family": "sans",
 "size": 2
 },
-"edit": {
-"link": null,
-"text": null
-},
+"edit": null,
 "history": {
 "link": null,
 "text": null
@@ -257,8 +272,14 @@ gitbook.start({
 },
 "download": null,
 "toc": {
-"collapse": "subsection"
-}
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": true
 });
 });
 </script>
