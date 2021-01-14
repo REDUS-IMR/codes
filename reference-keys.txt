@@ -12,7 +12,6 @@ prediction-variance-link-used-in-nea-haddock-assessment
 work-package-2
 biotic-explorer
 echosounder-comparison-tool
-echotools
 python-echotools
 survey-time-series-tools
 various-useful-snippets
