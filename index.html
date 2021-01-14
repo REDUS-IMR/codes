@@ -49,14 +49,17 @@
 
 
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <script type="text/javascript">
   $(document).ready(function() {
 
     $("#header").prepend("<img src=\"images/reduslogo.jpg\" alt=\"REDUS logo\">");
 
     $('body').prepend("<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>");
-    // onClick function for all plots (img's)
-    $('img.screenshot').mouseover(function() {
+    // onClick function for all screenshots
+    $('img.screenshot').click(function() {
       $('.zoomImg').attr('src', $(this).attr('src'));
       $('.zoomDiv').css({opacity: '1', width: '60%'});
     });
@@ -151,8 +154,8 @@
 <h1><span class="header-section-number">1</span> Work Package 1</h1>
 <div id="library-for-multi-stage-estimation" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Library for multi-stage estimation</h2>
-<p><em>Edvin Fuglebakk (IMR)</em></p>
-<p><em>2020-11-01</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Edvin Fuglebakk (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-11-01</em></p>
 <p>Library for design-based estimation and bootstrap estimation from multi-stage sampling designs. Contains functions for estimation from unequal probability sampling, and example data from the Catchlottery-sampling.</p>
 <p><strong>License</strong>: LGPL3</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/Sea2Data/CatchLotteryEstimation" class="uri">https://github.com/Sea2Data/CatchLotteryEstimation</a></p>
@@ -160,8 +163,8 @@
 </div>
 <div id="prototype-for-rdbes-conversion" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Prototype for RDBES conversion</h2>
-<p><em>Edvin Fuglebakk (IMR)</em></p>
-<p><em>2020-11-01</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Edvin Fuglebakk (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-11-01</em></p>
 <p>Prototype for RDBES conversion, preparing data for the RDBES test data call in 2020 (Herring and Blue Whiting). Prepares landings and efforts, and samples from catch lottery and other fisheries-targeted sampling (missiontype 1 and 19).</p>
 <p><strong>License</strong>: LGPL3</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/edvinf/wkrdb-est-dataconversion" class="uri">https://github.com/edvinf/wkrdb-est-dataconversion</a></p>
@@ -169,8 +172,8 @@
 </div>
 <div id="reporting-functions-for-stox-reca" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Reporting functions for StoX-Reca</h2>
-<p><em>Edvin Fuglebakk (IMR)</em></p>
-<p><em>2020-11-01</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Edvin Fuglebakk (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-11-01</em></p>
 <p>Contains functions and example scripts for generating commonly requested reports from StoX-Reca projects (StoX v2.7).</p>
 <p><strong>License</strong>: LGPL3</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/Sea2Data/FDAtools/tree/master/stoxReca/reports" class="uri">https://github.com/Sea2Data/FDAtools/tree/master/stoxReca/reports</a></p>
@@ -178,8 +181,8 @@
 </div>
 <div id="library-for-fisheries-dependent-analysis" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> Library for Fisheries Dependent Analysis</h2>
-<p><em>Edvin Fuglebakk (IMR)</em></p>
-<p><em>2020-11-01</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Edvin Fuglebakk (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-11-01</em></p>
 <p>Library for Fisheries Dependent Analysis. Contains a generic interface to Reca, which facilitate adaptation of Reca to many kinds of data formats, and functions for plotting results. Also contains various support functions for fisheries dependent analysis.</p>
 <p><strong>License</strong>: LGPL3</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/StoXProject/RstoxFDA" class="uri">https://github.com/StoXProject/RstoxFDA</a></p>
@@ -187,8 +190,8 @@
 </div>
 <div id="snapshot-extraction" class="section level2" number="1.5">
 <h2><span class="header-section-number">1.5</span> Snapshot-extraction</h2>
-<p><em>Edvin Fuglebakk (IMR)</em></p>
-<p><em>2020-11-01</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Edvin Fuglebakk (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-11-01</em></p>
 <p>Tool for fetching date-versioned data via NMD-biotic API. E.g. Extract the data as it where on a given date in the past.</p>
 <p><strong>License</strong>: LGPL3</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/Sea2Data/Dataset-snapshot-extractor" class="uri">https://github.com/Sea2Data/Dataset-snapshot-extractor</a></p>
@@ -196,16 +199,16 @@
 </div>
 <div id="coastal-cod-analysis-with-reca" class="section level2" number="1.6">
 <h2><span class="header-section-number">1.6</span> Coastal cod analysis with Reca</h2>
-<p><em>Edvin Fuglebakk (IMR)</em></p>
-<p><em>2020-11-01</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Edvin Fuglebakk (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-11-01</em></p>
 <p>Contains script for using Rstox and Reca run catch at age estimate for coastal-cod and NEA cod with stock split estimated from otolith-typing, and area definitions incorporating 12-nm delimiter.</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/Sea2Data/FDAtools/tree/master/stoxReca/coastalCod" class="uri">https://github.com/Sea2Data/FDAtools/tree/master/stoxReca/coastalCod</a></p>
 <p><strong>Keywords</strong>: <em>Reca, coastal cod, Rstox</em></p>
 </div>
 <div id="reca-support-in-rstox" class="section level2" number="1.7">
 <h2><span class="header-section-number">1.7</span> Reca support in Rstox</h2>
-<p><em>Arne-Johannes Holmin (IMR), Edvin Fuglebakk (IMR)</em></p>
-<p><em>2020-11-01</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Arne-Johannes Holmin (IMR), Edvin Fuglebakk (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-11-01</em></p>
 <p>Functions for preparing data for Reca and for plotting results and reports</p>
 <p><strong>License</strong>: LGPL3</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/Sea2Data/Rstox/tree/develop" class="uri">https://github.com/Sea2Data/Rstox/tree/develop</a></p>
@@ -213,8 +216,8 @@
 </div>
 <div id="easy-reca-package" class="section level2" number="1.8">
 <h2><span class="header-section-number">1.8</span> Easy RECA Package</h2>
-<p><em>Ibrahim Umar (IMR), Edvin Fuglebakk (IMR), Hanne W. Rognebakke (NR)</em></p>
-<p><em>2019-05-07</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Ibrahim Umar (IMR), Edvin Fuglebakk (IMR), Hanne W. Rognebakke (NR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2019-05-07</em></p>
 <p>Reca is a package made for the Institute of Marine Research. The package produces predictions of catch-at-age, i.e. the number of fish caught within each age group, of different fish species. This is a testing version of a universal platform RECA package with OpenBLAS.</p>
 <p><strong>License</strong>: NOP</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/iambaim/new-reca" class="uri">https://github.com/iambaim/new-reca</a></p>
@@ -222,16 +225,18 @@
 </div>
 <div id="external-covariance-matrices-in-sam" class="section level2" number="1.9">
 <h2><span class="header-section-number">1.9</span> External covariance matrices in SAM</h2>
-<p><em>Olav Nikolai Breivik (NR) and Anders Nielsen (DTU-aqua)</em></p>
-<p><em>2018-04-24</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Olav Nikolai Breivik (NR) and Anders Nielsen (DTU-aqua)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2018-04-24</em></p>
 <p>External observation covariance matrices can be utilized in SAM. Link to example: <a href="https://github.com/fishfollower/SAM/blob/master/testmore/nscodcovar/script.R" class="uri">https://github.com/fishfollower/SAM/blob/master/testmore/nscodcovar/script.R</a></p>
+<p><strong>Jupyter notebook</strong>: (<a href="https://nbviewer.jupyter.org/urls/redus-imr.github.io/codes/assets/olav-sam_ext_covar.ipynb">show</a>) (<a href="assets/olav-sam_ext_covar.ipynb">download</a>)</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/fishfollower/SAM/blob/master/testmore/nscodcovar/script.R" class="uri">https://github.com/fishfollower/SAM/blob/master/testmore/nscodcovar/script.R</a></p>
 </div>
 <div id="prediction-variance-link-used-in-nea-haddock-assessment" class="section level2" number="1.10">
 <h2><span class="header-section-number">1.10</span> Prediction variance link used in NEA haddock assessment</h2>
-<p><em>Olav Nikolai Breivik (NR), Anders Nielsen (DTU-aqua) and Casper W. Berg (DTU-aqua)</em></p>
-<p><em>2020-03-19</em></p>
+<p><span class="material-icons">supervisor_account</span> <em>Olav Nikolai Breivik (NR), Anders Nielsen (DTU-aqua) and Casper W. Berg (DTU-aqua)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-03-19</em></p>
 <p>A prediction-variance relation was adopted for the official assessment of North East Arctic haddock in 2020. Link to example of code for using that relation in SAM is provided here: <a href="https://github.com/fishfollower/SAM/blob/master/testmore/neaHaddockPredVar/script.R" class="uri">https://github.com/fishfollower/SAM/blob/master/testmore/neaHaddockPredVar/script.R</a></p>
+<p><strong>Jupyter notebook</strong>: (<a href="https://nbviewer.jupyter.org/urls/redus-imr.github.io/codes/assets/olav-sam_variance_link.ipynb">show</a>) (<a href="assets/olav-sam_variance_link.ipynb">download</a>)</p>
 <p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/fishfollower/SAM/blob/master/testmore/neaHaddockPredVar/script.R" class="uri">https://github.com/fishfollower/SAM/blob/master/testmore/neaHaddockPredVar/script.R</a></p>
 <p><strong>Related identifiers</strong>: <a href="https://doi.org/10.17895/ices.pub.6050" class="uri">https://doi.org/10.17895/ices.pub.6050</a></p>
 </div>

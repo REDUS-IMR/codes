@@ -1,6 +1,12 @@
+.material-icons {
+    vertical-align: -5px; 
+    padding-right: 0.3em;
+}
+
 .screenshot {
-   background-color: #9ecff7;
-   padding:2px;
+   background-color: #000000;
+   padding:1px;
+   cursor: zoom-in;
    display: inline-block;
 }
 
@@ -17,5 +23,6 @@
 }
 
 .zoomImg {
+  cursor: zoom-out;
   width: 100%;
 }
