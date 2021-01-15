@@ -13,6 +13,7 @@ work-package-2
 biotic-explorer
 echosounder-comparison-tool
 python-echotools
+rstoxdata
 survey-time-series-tools
 various-useful-snippets
 trawl-performance-report
