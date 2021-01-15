@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Work Package 3: Evaluating and testing of long-term management strategies | REDUS Software Collection</title>
+  <meta name="description" content="3 Work Package 3: Evaluating and testing of long-term management strategies | REDUS Software Collection" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Work Package 3: Evaluating and testing of long-term management strategies | REDUS Software Collection" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Work Package 3: Evaluating and testing of long-term management strategies | REDUS Software Collection" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="work-package-2-fishery-independent-scientific-surveys.html"/>
+<link rel="next" href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    $("#header").prepend("<img src=\"images/reduslogo.jpg\" alt=\"REDUS logo\">");
+
+    $('body').prepend("<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>");
+    // onClick function for all screenshots
+    $('img.screenshot').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src'));
+      $('.zoomDiv').css({opacity: '1', width: '60%'});
+    });
+    // onClick function for zoomImg
+    $('.zoomImg').mouseout(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'});
+    }).click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'});
+    });
+  });
+</script>
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Work Package 1: Fisheries-dependent (catch) surveys and assessment modeling</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#library-for-multi-stage-estimation"><i class="fa fa-check"></i><b>1.1</b> Library for multi-stage estimation</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#prototype-for-rdbes-conversion"><i class="fa fa-check"></i><b>1.2</b> Prototype for RDBES conversion</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#reporting-functions-for-stox-reca"><i class="fa fa-check"></i><b>1.3</b> Reporting functions for StoX-Reca</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#library-for-fisheries-dependent-analysis"><i class="fa fa-check"></i><b>1.4</b> Library for Fisheries Dependent Analysis</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#snapshot-extraction"><i class="fa fa-check"></i><b>1.5</b> Snapshot-extraction</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#coastal-cod-analysis-with-reca"><i class="fa fa-check"></i><b>1.6</b> Coastal cod analysis with Reca</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#reca-support-in-rstox"><i class="fa fa-check"></i><b>1.7</b> Reca support in Rstox</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#easy-reca-package"><i class="fa fa-check"></i><b>1.8</b> Easy RECA Package</a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#external-covariance-matrices-in-sam"><i class="fa fa-check"></i><b>1.9</b> External covariance matrices in SAM</a></li>
+<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#prediction-variance-link-used-in-nea-haddock-assessment"><i class="fa fa-check"></i><b>1.10</b> Prediction variance link used in NEA haddock assessment</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html"><i class="fa fa-check"></i><b>2</b> Work Package 2: Fishery-independent (scientific) surveys</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#biotic-explorer"><i class="fa fa-check"></i><b>2.1</b> Biotic Explorer</a></li>
+<li class="chapter" data-level="2.2" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#echosounder-comparison-tool"><i class="fa fa-check"></i><b>2.2</b> Echosounder comparison tool</a></li>
+<li class="chapter" data-level="2.3" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#python-echotools"><i class="fa fa-check"></i><b>2.3</b> Python EchoTools</a></li>
+<li class="chapter" data-level="2.4" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#rstoxdata"><i class="fa fa-check"></i><b>2.4</b> RstoxData</a></li>
+<li class="chapter" data-level="2.5" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#survey-time-series-tools"><i class="fa fa-check"></i><b>2.5</b> Survey time series tools</a></li>
+<li class="chapter" data-level="2.6" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#various-useful-snippets"><i class="fa fa-check"></i><b>2.6</b> Various useful snippets</a></li>
+<li class="chapter" data-level="2.7" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#trawl-performance-report"><i class="fa fa-check"></i><b>2.7</b> Trawl Performance Report</a></li>
+<li class="chapter" data-level="2.8" data-path="work-package-2-fishery-independent-scientific-surveys.html"><a href="work-package-2-fishery-independent-scientific-surveys.html#ibtsnorthsea-sampling-strategies-for-age-determination-of-cod-gadhus-morhua"><i class="fa fa-check"></i><b>2.8</b> IBTSNorthSea: sampling strategies for age determination of cod (Gadhus morhua)</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><i class="fa fa-check"></i><b>3</b> Work Package 3: Evaluating and testing of long-term management strategies</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#evaluating-the-utility-of-a-novel-harvest-control-rule-in-the-management-of-long-lived-sporadically-recruiting-species-through-management-strategy-evaluation"><i class="fa fa-check"></i><b>3.1</b> Evaluating the utility of a Novel Harvest Control Rule in the management of long-lived sporadically recruiting species through Management Strategy Evaluation</a></li>
+<li class="chapter" data-level="3.2" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#ecological-effects-and-ecosystem-shifts-caused-by-mass-mortality-events-on-early-life-stages-of-fish"><i class="fa fa-check"></i><b>3.2</b> Ecological effects and ecosystem shifts caused by mass mortality events on early life stages of fish</a></li>
+<li class="chapter" data-level="3.3" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#atlantis-r-interface"><i class="fa fa-check"></i><b>3.3</b> Atlantis-R interface</a></li>
+<li class="chapter" data-level="3.4" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#gadgetr"><i class="fa fa-check"></i><b>3.4</b> GadgetR</a></li>
+<li class="chapter" data-level="3.5" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#multi-fleet-deterministic-projection-mfdp"><i class="fa fa-check"></i><b>3.5</b> Multi Fleet Deterministic Projection (MFDP)</a></li>
+<li class="chapter" data-level="3.6" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#mse-framework"><i class="fa fa-check"></i><b>3.6</b> MSE Framework</a></li>
+<li class="chapter" data-level="3.7" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#mse-bootstrap-gcp"><i class="fa fa-check"></i><b>3.7</b> mse-bootstrap-gcp</a></li>
+<li class="chapter" data-level="3.8" data-path="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html"><a href="work-package-3-evaluating-and-testing-of-long-term-management-strategies.html#north-sea-saithe-management-strategy-evaluation-mse"><i class="fa fa-check"></i><b>3.8</b> North Sea saithe Management Strategy Evaluation (MSE)</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"><a href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"><i class="fa fa-check"></i><b>4</b> Work Package 4: Communication of uncertainty, dissemination of project results and capacity building</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"><a href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html#fishdocker"><i class="fa fa-check"></i><b>4.1</b> Fishdocker</a></li>
+<li class="chapter" data-level="4.2" data-path="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"><a href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html#redus-framework-app"><i class="fa fa-check"></i><b>4.2</b> REDUS Framework app</a></li>
+<li class="chapter" data-level="4.3" data-path="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"><a href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html#redustools"><i class="fa fa-check"></i><b>4.3</b> REDUStools</a></li>
+<li class="chapter" data-level="4.4" data-path="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"><a href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html#sam-course"><i class="fa fa-check"></i><b>4.4</b> SAM-course</a></li>
+<li class="chapter" data-level="4.5" data-path="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html"><a href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html#tmb-courses"><i class="fa fa-check"></i><b>4.5</b> TMB courses</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">REDUS Software Collection</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="work-package-3-evaluating-and-testing-of-long-term-management-strategies" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Work Package 3: Evaluating and testing of long-term management strategies</h1>
+<div id="evaluating-the-utility-of-a-novel-harvest-control-rule-in-the-management-of-long-lived-sporadically-recruiting-species-through-management-strategy-evaluation" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Evaluating the utility of a Novel Harvest Control Rule in the management of long-lived sporadically recruiting species through Management Strategy Evaluation</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Cian Kelly (UiB), Mikko Heino (UiB), Daniel Howell (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2019-08-16</em></p>
+<p>The code for the masters thesis work with the above title. Contains a Novel HCR, which reflected an Escapement HCR, was tested on a stock whose dynamics was informed by Greenland halibut (Reinhardtius hippoglossoides). The code is implemented as a modification of the FLBEIA software (<a href="https://github.com/flr/FLBEIA" class="uri">https://github.com/flr/FLBEIA</a>).</p>
+<p><strong>Download</strong> (<em>software</em>): <a href="./assets/cian-flbeia_alternative.zip">cian-flbeia_alternative.zip</a></p>
+<p><strong>Related identifiers</strong>: <a href="https://bora.uib.no/bora-xmlui/handle/1956/20734" class="uri">https://bora.uib.no/bora-xmlui/handle/1956/20734</a></p>
+</div>
+<div id="ecological-effects-and-ecosystem-shifts-caused-by-mass-mortality-events-on-early-life-stages-of-fish" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Ecological effects and ecosystem shifts caused by mass mortality events on early life stages of fish</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Holly Perryman (IMR; <a href="https://orcid.org/0000-0001-9341-682X" class="uri">https://orcid.org/0000-0001-9341-682X</a>), and Ina Nilson (University of Bergen/IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2019-11-06</em></p>
+<p>The following deposition contains scripts for creating the figures in Olsen et al. (2019). This deposition includes example files for executing the code. The files are inputs and outputs to/from the Norwegian and Barents Seas Atlantis model.</p>
+<p><strong>Jupyter notebook</strong>: (<a href="https://nbviewer.jupyter.org/urls/redus-imr.github.io/codes/assets/holly-MMEmanuscript477196.ipynb">show</a>) (<a href="assets/holly-MMEmanuscript477196.ipynb">download</a>)</p>
+<p><strong>Download</strong> (<em>software</em>): <a href="./assets/holly-MMEmanuscript477196.R">holly-MMEmanuscript477196.R</a></p>
+<p><strong>Related identifiers</strong>: <a href="https://doi.org/10.3389/fmars.2019.00669" class="uri">https://doi.org/10.3389/fmars.2019.00669</a></p>
+<p><strong>References</strong>: Olsen, E., Eide, C.H., Nilsen, I., Perryman, H.A. and Vikebø, F., 2019. Ecological effects and ecosystem shifts caused by mass mortality events on early life stages of fish. Frontiers in Marine Science, 6, p.669.</p>
+<p><strong>Keywords</strong>: <em>Atlantis; marine ecosystem model; data processing; biomass trends; spider plots</em></p>
+</div>
+<div id="atlantis-r-interface" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Atlantis-R interface</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Ibrahim Umar (IMR), Holly Perryman (IMR), Rebecca Gorton (CSIRO), Elizabeth A. Fulton (CSIRO)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2019-10-24</em></p>
+<p>The marine ecosystem model Atlantis is structured following the MSE framework, meaning Atlantis simulates both the operating model and the management procedure. This is an advantageous feature for simulating MSE under and ecosystem-based context, however it may be cumbersome to program complicated/specific management procedures into Atlantis. To integrate Atlantis into the REDUS framework, Atlantis was programmed to send/receive data back and forth with the statistical software R. With this new functionality, Atlantis can be treated solely as an operating model while R is used to simulate the management procedure. Thus, management procedures previously programmed in R can now be simulated under an ecosystem-based context within Atlantis.</p>
+<p><strong>License</strong>: LGPL3 + CSIRO-proprietary</p>
+<p><strong>URL</strong> (<em>software</em>): <a href="https://git.imr.no/REDUS/atlantis-code" class="uri">https://git.imr.no/REDUS/atlantis-code</a></p>
+<p><strong>Keywords</strong>: <em>ecosystem, MSE, simulation, C, marine, box, model, multi-species, biogeochemical, physical</em></p>
+</div>
+<div id="gadgetr" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> GadgetR</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Ibrahim Umar (IMR), Bjarki Thor Elvarsson (Hafro), James Begley (Hafro), Hoskuldur Bjornsson (Hafro), Gunnar Stefnasson (Hafro), Lorna Taylor (Hafro), Daniel Howell (IMR), Sigurdur Hannesson (Hafro), Narfi Stefansson (Hafro), Hersir Sigurgeirsson (Hafro), Morten Nygard Asnes (IMR), Kristin Froysa (IMR), Audbjorg Jakobsdottir (Hafro), Jon Gudmundsson (Hafro), Gudmundur Einarsson (Hafro), Thordis Linda Thorarinsdottir (Hafro), Kristjana Yr Jonsdottir (Hafro), Mark G. Johnson (US-EPA), Bill Goffe (USM)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2018-06-21</em></p>
+<p>GadgetR is an R library that allows users to create a two-way interface to the simulation function (via a “gadget -s” command line switch) of Hafro’s Globally applicable Area Disaggregated General Ecosystem Toolbox (Gadget) program. To simply put, GadgetR provides users flexibility to explicitly control gadget simulation steps, and inspect and modify (as needed) gadget internal objects (such as recruitment parameters, fleet consumption amount, among others) at any point in time during the simulation. These functionalities are especially useful when you want to use a gadget model as an operating model (single or multi- species) in existing management strategy (MSE) frameworks in R (FLR/mse or FLBEIA). GadgetR ships with the latest Gadget program (version 2.2.00-BETA) and retains all of the original Gadget program functionality.</p>
+<p><strong>License</strong>: GPL2</p>
+<p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/REDUS-IMR/gadget" class="uri">https://github.com/REDUS-IMR/gadget</a></p>
+<p><strong>Related identifiers</strong>: <a href="https://redus-imr.github.io/gadget/articles/quickstart.html" class="uri">https://redus-imr.github.io/gadget/articles/quickstart.html</a></p>
+<p><strong>Keywords</strong>: <em>simulation, optimization, multi-species, stock, gadget ecosystem, R, C++, MSE</em></p>
+</div>
+<div id="multi-fleet-deterministic-projection-mfdp" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Multi Fleet Deterministic Projection (MFDP)</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Ibrahim Umar (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2020-12-18</em></p>
+<p>Program for the fisheries short-term prediction. Allows for multi-fleet catch constraints and multi-annual prediction. This program is an attempt to re-create the original Multi Fleet Deterministic Projection (MFDP) program for fisheries in R.</p>
+<p><strong>License</strong>: LGPL3</p>
+<p><strong>Jupyter notebook</strong>: (<a href="https://nbviewer.jupyter.org/urls/redus-imr.github.io/codes/assets/ibrahim-mfdp.ipynb">show</a>) (<a href="assets/ibrahim-mfdp.ipynb">download</a>)</p>
+<p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/REDUS-IMR/mfdp" class="uri">https://github.com/REDUS-IMR/mfdp</a></p>
+<p><strong>Keywords</strong>: <em>mfdp, fisheries, forecast, multi-year, REDUS, IMR</em></p>
+</div>
+<div id="mse-framework" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> MSE Framework</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Ibrahim Umar (IMR), Daisuke Goto (IMR), Alfonso Perez Rodriguez (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2019-03-14</em></p>
+<p>FLR-Gadget is a Management Strategy Evaluation (MSE) framework using FLR (The Fisheries Library in R) mse (<a href="https://github.com/flr/mse" class="uri">https://github.com/flr/mse</a>) with an R package of customized Gadget (Globally applicable Area Disaggregated General Ecosystem Toolbox, <a href="https://github.com/Hafro/gadget2" class="uri">https://github.com/Hafro/gadget2</a>), GadgetR (<a href="https://github.com/REDUS-IMR/gadget" class="uri">https://github.com/REDUS-IMR/gadget</a>), as an operating model (OM). This framework is designed to run single and multi- species MSEs. The OM can be age- or length- based. The framework runs short-cut and full-feedback MSEs. Currently, a4a (Assessment for All, <a href="https://github.com/flr/FLa4a" class="uri">https://github.com/flr/FLa4a</a>) statistical catch-at-age model and SAM (State-space Assessment Model, <a href="https://github.com/flr/FLSAM" class="uri">https://github.com/flr/FLSAM</a>) are implemented as an assessment model.</p>
+<p><strong>License</strong>: LGPL3</p>
+<p><strong>Jupyter notebook</strong>: (<a href="https://nbviewer.jupyter.org/urls/redus-imr.github.io/codes/assets/ibrahim-MSE_framework.ipynb">show</a>) (<a href="assets/ibrahim-MSE_framework.ipynb">download</a>)</p>
+<p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/dgoto2/flr-gadget" class="uri">https://github.com/dgoto2/flr-gadget</a></p>
+<p><strong>Keywords</strong>: <em>IMR, REDUS, FLR, MSE, multi-species, simulation, framework, R, fisheries, gadget</em></p>
+</div>
+<div id="mse-bootstrap-gcp" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> mse-bootstrap-gcp</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Ibrahim Umar (IMR), Jennifer Devine (IMR), Daisuke Goto (IMR)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2019-02-24</em></p>
+<p>Scripts for running the North Sea Saithe Management Strategy Evaluation (MSE) on Google Cloud Platform (GCP)</p>
+<p><strong>License</strong>: LGPL3</p>
+<p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/REDUS-IMR/mse-bootstrap-gcp" class="uri">https://github.com/REDUS-IMR/mse-bootstrap-gcp</a></p>
+<p><strong>Keywords</strong>: <em>IMR, REDUS, bash, GCP, MSE, North Sea Saithe, simulation, parallel</em></p>
+</div>
+<div id="north-sea-saithe-management-strategy-evaluation-mse" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> North Sea saithe Management Strategy Evaluation (MSE)</h2>
+<p><span class="material-icons">supervisor_account</span> <em>Jennifer Devine (IMR), Daisuke Goto (IMR), Ibrahim Umar (IMR), Colin Millar (ICES), Jose De Oliveira (CEFAS), Simon Fischer (CEFAS)</em></p>
+<p><span class="material-icons">calendar_today</span> <em>2019-06-17</em></p>
+<p>A management strategy evaluation (MSE) framework for North Sea saithe (Pollachius virens) in Subareas 4, 6 and Division 3.a (North Sea, Rockall and West of Scotland, Skagerrak and Kattegat) developed using the Fisheries Library in R mse package as part of the Workshop on North Sea stocks Management Strategy Evaluation (WKNSMSE).</p>
+<p><strong>URL</strong> (<em>software</em>): <a href="https://github.com/ices-taf/wk_WKNSMSE_pok.27.3a46" class="uri">https://github.com/ices-taf/wk_WKNSMSE_pok.27.3a46</a></p>
+<p><strong>Related identifiers</strong>: <a href="https://doi.org/10.17895/ices.pub.5090" class="uri">https://doi.org/10.17895/ices.pub.5090</a></p>
+<p><strong>Keywords</strong>: <em>mse, saithe, ices, north sea, R, FLR, REDUS, IMR</em></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="work-package-2-fishery-independent-scientific-surveys.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["redus_software.pdf", "PDF"], ["redus_software.docx", "DOCX"]],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": true
+});
+});
+</script>
+
+</body>
+
+</html>

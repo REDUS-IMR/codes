@@ -1,4 +1,4 @@
-work-package-1
+work-package-1-fisheries-dependent-catch-surveys-and-assessment-modeling
 library-for-multi-stage-estimation
 prototype-for-rdbes-conversion
 reporting-functions-for-stox-reca
@@ -9,7 +9,7 @@ reca-support-in-rstox
 easy-reca-package
 external-covariance-matrices-in-sam
 prediction-variance-link-used-in-nea-haddock-assessment
-work-package-2
+work-package-2-fishery-independent-scientific-surveys
 biotic-explorer
 echosounder-comparison-tool
 python-echotools
@@ -18,7 +18,7 @@ survey-time-series-tools
 various-useful-snippets
 trawl-performance-report
 ibtsnorthsea-sampling-strategies-for-age-determination-of-cod-gadhus-morhua
-work-package-3
+work-package-3-evaluating-and-testing-of-long-term-management-strategies
 evaluating-the-utility-of-a-novel-harvest-control-rule-in-the-management-of-long-lived-sporadically-recruiting-species-through-management-strategy-evaluation
 ecological-effects-and-ecosystem-shifts-caused-by-mass-mortality-events-on-early-life-stages-of-fish
 atlantis-r-interface
@@ -27,7 +27,7 @@ multi-fleet-deterministic-projection-mfdp
 mse-framework
 mse-bootstrap-gcp
 north-sea-saithe-management-strategy-evaluation-mse
-work-package-4
+work-package-4-communication-of-uncertainty-dissemination-of-project-results-and-capacity-building
 fishdocker
 redus-framework-app
 redustools
